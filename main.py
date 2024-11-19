@@ -1,20 +1,16 @@
-from insertExamples import historico_aluno1,historico_aluno2, historico_prof1, historico_prof2
-from querrys import um,dois,tres,quatro,cinco
-from MongoConnection import MongoDB
+from astrapy import DataAPIClient
+import os
+# Initialize the client
+client = DataAPIClient("AstraCS:ZmdvCsGXASzamzwSMQEFpeqC:3655a76fd19d16fee2bb997a6d10432eee29016bb030800f47e97764ab6b9c33")
+db = client.get_database_by_api_endpoint(
+  "https://46428400-738f-4555-8f4a-9196884d48b3-us-east-2.apps.astra.datastax.com"
+)
 
-mongoCLient = MongoDB()
 
-# inserindo
 
-mongoCLient.insert("Historico_aluno",historico_aluno1)
-mongoCLient.insert("Historico_aluno",historico_aluno2)
-mongoCLient.insert("Historico_prof", historico_prof1)
-mongoCLient.insert("Historico_prof", historico_prof2)
 
-# rodando as querrys
 
-um(mongoCLient,"Maria")
-dois(mongoCLient,"Pablo")
-tres(mongoCLient,"232045")
-quatro(mongoCLient)
-cinco(mongoCLient)
+
+
+print(f"Connected to Astra DB: {db.list_collection_names()}")
+
