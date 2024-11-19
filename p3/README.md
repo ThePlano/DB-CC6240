@@ -14,11 +14,9 @@ Este guia descreve como criar as tabelas no banco de dados **Neo4j**, inserir os
 
 ## Passo a Passo para Execução
 
-### Passo 1: Configuração do Neo4j
+### Passo 1: Acesse o Neo4j
 
-1. **Certifique-se de que o Neo4j está instalado e em execução**.
-   - Acesse a interface web do Neo4j no endereço padrão: [http://localhost:7474](http://localhost:7474).
-2. **Configure as credenciais no código**:
+1. **Configure as credenciais no código**:
    - Verifique as configurações de conexão no **main.py** e **querrys.py**, incluindo **URI**, **usuário** e **senha**.
 
 ---
@@ -48,25 +46,17 @@ Este guia descreve como criar as tabelas no banco de dados **Neo4j**, inserir os
 1. **Abra o arquivo `querrys.py`**.
 2. **Execute as consultas com parâmetros no Python**:
    - As funções em `querrys.py` permitem enviar parâmetros para personalizar as consultas.
-   - Exemplo de execução no terminal Python:
-     ```python
-     from querrys import executar_consulta_1
-     executar_consulta_1(parametro1, parametro2)
-     ```
 
 ---
 
-## Fluxo Geral do Projeto
+## Alunos:
+
+- **Lucas Sombra do Nascimento** - RA: 221221120
+- **Nathalia Saori Shimokawa** - RA: 221220528
+- **Rafael Augusto Assembleia** - RA: 221221039
 
 1. **Criar tabelas com `querryCreate.cypher`.**
 2. **Inserir dados com `main.py`.**
 3. **Executar consultas com `querrys.py` e enviar os parâmetros necessários.**
 
 ---
-
-## Observações
-
-- **Sobre os parâmetros**:
-  - Cada função em `querrys.py` aceita diferentes parâmetros que devem ser enviados de acordo com a consulta.
-- **Mensagens de log**:
-  - O projeto utiliza logs para indicar o sucesso ou falha nas operações. Verifique os logs para depurar erros.
