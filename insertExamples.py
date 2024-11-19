@@ -1,3 +1,4 @@
+
 historico_aluno1 =  {
     "RA": 23232,
     "name": "Maria",
@@ -114,7 +115,6 @@ historico_aluno2 =  {
     },
     "completion_date": "232045"
 }
-
 historico_prof1 = {
     "idProf" : 35534,
     "name": "Pablo",
@@ -172,3 +172,8 @@ historico_prof2 = {
             ]
 }
 
+from MongoConnection import MongoDB
+
+mongo = MongoDB()
+mongo.insert("Historico_aluno", historico_prof1)
+mongo.insert("Historico_prof", historico_aluno2)
