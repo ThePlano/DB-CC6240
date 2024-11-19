@@ -18,13 +18,12 @@ Os principais arquivos do projeto são:
 
 Antes de executar o código, certifique-se de que o MongoDB esteja em execução e acessível. O **MongoConnection.py** é responsável por conectar ao banco de dados, então verifique se as configurações de conexão estão corretas.
 
-### Passo 2: Executar o Arquivo `main.py`
+### Passo 2: Executar o Arquivo `insertExamples.py`
 
-1. **Execute o arquivo `main.py`**:
-   - O arquivo `main.py` é o arquivo principal que irá utilizar as inserções do arquivo `insertExamples.py` e executar as consultas de `querrys.py`.
+1. **Execute o arquivo `insert.py`**:
+   - O arquivo `insertExamples.py` é o arquivo principal que irá rodar as inserções e para executar as consultas basta escolher as queerys em  `querrys.py` e executar chamando umas das funcoes.
    
-   ```bash
-   python main.py
+   
 
 
 ## Alunos:
